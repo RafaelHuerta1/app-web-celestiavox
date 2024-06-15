@@ -3,6 +3,7 @@
     font-size:1.6em;
     font-weight: bold;
     margin-top: 2rem;
+    text-decoration: underline;
 }
 
 .oraciones__container__main{
@@ -34,6 +35,8 @@
     height: 'auto';
     margin-top: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    max-height: 500px;
 
 }
 .imgMain{
@@ -68,4 +71,19 @@
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 1rem;
+}
+
+
+/* mediq query lasptop and tablet */
+@media (min-width: 768px) {
+    .cotainer__card__main{
+        flex-direction:row ;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 12rem;
+    }
+    .title__oraciones{
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
 }

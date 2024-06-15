@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import '../style/card.css'
+import { Outlet, Link } from "react-router-dom";
 
 
 
@@ -28,6 +29,24 @@ console.log(title, description, image);
 
 function CardsMain(){
     const [card, setCard] = useState(cards);
+   // const [rutaPag, setRutaPag] = useState("/oraciones-diarias");
+   const [rutaPag, setRutaPag] = useState("");
+
+
+    const createRuta =  async (e) => {
+       await console.log('|| ',e)
+        if(e.target.id === 1){
+            setRutaPag("/oraciones-diarias");
+        }
+        
+    }
+
+    useEffect(() => {
+        console.log("useEffect ||");
+        console.log(rutaPag);    
+        createRuta();    
+    }, [rutaPag]);
+
     return (
         <div className="oraciones__container__main">
             <h1 className="title__oraciones">Oraciones para tu vida</h1>
@@ -36,7 +55,9 @@ function CardsMain(){
                     <div key={card.id} className="container__main__oracion__card">
                         <h2>{card.title}</h2>
                         <p className="card__descripcion" >{card.description}</p>
-                        <button className="btn__main">Leer</button>
+                        <button className="btn__main" >
+                        <Link id={String(card.id)} onClick={createRuta} to={rutaPag} >Leer</Link>
+                        </button>
 
                     </div>
                 ))}

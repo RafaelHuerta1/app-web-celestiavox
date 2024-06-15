@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import ErrorPage from "./error-page.jsx";
 import CardsMain from './componentes/CardsMain.jsx';
@@ -9,6 +8,9 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
+import OracionesDiairas from './pages/OracionesDiairas.jsx';
+import OracionesSantos from './pages/OracionesSantos.jsx';
+
 const router = createBrowserRouter([
     {
       path: "/",
@@ -16,6 +18,18 @@ const router = createBrowserRouter([
       errorElement: <ErrorPage />,
 
     },
+    {
+      path: "/oraciones-diarias",
+      element: <OracionesDiairas />,
+      errorElement: <ErrorPage />,
+
+    },
+    {
+      path: "/oraciones-santos",
+      element: <OracionesSantos />,
+      errorElement: <ErrorPage />,
+
+    }
   ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
