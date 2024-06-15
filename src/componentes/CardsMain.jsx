@@ -33,10 +33,17 @@ function CardsMain(){
    const [rutaPag, setRutaPag] = useState("");
 
 
-    const createRuta =  async (e) => {
-       await console.log('|| ',e)
-        if(e.target.id === 1){
-            setRutaPag("/oraciones-diarias");
+    const createRuta =   (e) => {
+        console.log('|| ',e)
+        if(e === undefined) return;
+        if(e.target.id === '1'){
+             setRutaPag("/oraciones-diarias");
+             console.log("rutaPag ||",rutaPag)
+        }
+        else if(e.target.id === '2'){
+            setRutaPag("/oraciones-santos");
+            console.log("rutaPag ||",rutaPag)
+
         }
         
     }
@@ -44,7 +51,7 @@ function CardsMain(){
     useEffect(() => {
         console.log("useEffect ||");
         console.log(rutaPag);    
-        createRuta();    
+         createRuta();    
     }, [rutaPag]);
 
     return (
