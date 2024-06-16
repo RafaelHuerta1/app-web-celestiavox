@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import '../style/card.css'
-import { Outlet, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 
 
@@ -9,6 +9,7 @@ const cards = [
         id: 1,
         title: "Oraciones Diairas",
         description: "Oraciones para tu dia a dia, para que puedas tener un dia lleno de bendiciones"
+        
     },
     {
     id: 2,
@@ -45,14 +46,14 @@ function CardsMain(){
             console.log("rutaPag ||",rutaPag)
 
         }
-        
+        return rutaPag;
     }
 
+
     useEffect(() => {
-        console.log("useEffect ||");
-        console.log(rutaPag);    
-         createRuta();    
-    }, [rutaPag]);
+        console.log("rutaPag ||",rutaPag)
+        createRuta();
+    },[rutaPag])
 
     return (
         <div className="oraciones__container__main">
@@ -62,9 +63,10 @@ function CardsMain(){
                     <div key={card.id} className="container__main__oracion__card">
                         <h2>{card.title}</h2>
                         <p className="card__descripcion" >{card.description}</p>
-                        <button className="btn__main" >
-                        <Link id={String(card.id)} onClick={createRuta} to={rutaPag} >Leer</Link>
-                        </button>
+                        <Link  className="btn__main" id={String(card.id)} onClick={createRuta} to={rutaPag} >
+                            Leer
+                        </Link>
+
 
                     </div>
                 ))}

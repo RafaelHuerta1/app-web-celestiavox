@@ -1,0 +1,39 @@
+.h1__oracion__diaria{
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+.card__oraciones__diarias_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.card__oraciones__diarias{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 1.2rem;
+    width: auto;
+    height: auto;
+   border-radius: 3rem;
+   margin: 2rem;
+
+}
+.card__oraciones__diarias , h2{
+    text-align: center;
+    margin-top: 1rem;
+}
+.card__oraciones__diarias , p{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .card__oraciones__diarias_main{
+        flex-grow: inherit;
+    }
+}

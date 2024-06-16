@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import OracionesDiairas from './pages/OracionesDiairas.jsx';
 import OracionesSantos from './pages/OracionesSantos.jsx';
+import PlantillaOracion from './pages/PlantillaOracion.jsx';
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       element: <OracionesSantos />,
       errorElement: <ErrorPage />,
 
+    },
+    {
+      path: "/plantilla-oracion/:id",
+      element: <PlantillaOracion />,
+      errorElement: <ErrorPage />,
     }
   ]);
 

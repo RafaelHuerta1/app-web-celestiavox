@@ -73,7 +73,10 @@
     margin-top: 1rem;
 }
 
-
+a{
+    list-style: none;
+    text-decoration: none;
+}
 /* mediq query lasptop and tablet */
 @media (min-width: 768px) {
     .cotainer__card__main{
