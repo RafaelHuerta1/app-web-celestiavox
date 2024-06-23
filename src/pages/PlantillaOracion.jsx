@@ -1,4 +1,6 @@
 import { Routes, Route, useParams } from 'react-router-dom';
+import '../style/orcLarga.css'
+
 
 export default function PlantillaOracion() {
        
@@ -6,11 +8,13 @@ export default function PlantillaOracion() {
        console.log(oracionLarga);
 
        return(
-                     <div>
-                     <h1>11,  {oracionLarga} </h1>
-                     <p>
-                     --2
-                     </p>
-              </div>
+                                   <div className='container-main-orcLarga'>
+                                   <h2 className='title-orcLarga'> Reflexionemos  </h2>
+                                   <p
+                                   className='parrafo-orcLarga'
+                                   >
+                                             {oracionLarga}
+                                   </p>
+                      </div>
        )
 }
