@@ -14,12 +14,15 @@
 .card__oraciones__diarias{
     display: flex;
     justify-content:center;
+    align-items: center;
     flex-direction: column;
-    background-color: antiquewhite;
-    padding: 1.2rem;
-    width: auto;
-    height: auto;
-   border-radius: 3rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 1.4rem;
+    width: 300px;
+    height: 300px;
+
+   border-radius: 2rem;
    margin: 2rem;
 
 }
@@ -32,6 +35,23 @@
     margin-top: 1rem;
 }
 
+.btn__oracion__diaria{
+    padding: 0.5rem;
+    width: 100px;
+    height: 'auto';
+    margin-top: 2rem;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 1rem;
+    color: black;
+    cursor: pointer;
+
+}
+.btn__oracion__diaria:hover{
+    background-color: rgb(255, 220, 20);
+    color: black;
+    
+}
 @media (min-width: 768px) {
     .card__oraciones__diarias_main{
         flex-grow: inherit;

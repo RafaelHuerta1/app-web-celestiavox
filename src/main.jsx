@@ -32,7 +32,7 @@ const router = createBrowserRouter([
 
     },
     {
-      path: "/plantilla-oracion/:id",
+      path: "/plantilla-oracion/:oracionLarga",
       element: <PlantillaOracion />,
       errorElement: <ErrorPage />,
     }
