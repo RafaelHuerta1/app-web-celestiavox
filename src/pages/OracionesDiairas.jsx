@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
 import '../style/oracionDiaria.css';
+import Nav from '../componentes/Nav'
+
+
+
+
+
 
 const OracionesDiairas = () => {
     const sentences = [
@@ -34,7 +40,15 @@ const OracionesDiairas = () => {
 
     return (
         <div>
+            <Nav />
+            
+
                 <h1 className="h1__oracion__diaria">Oraciones Populares...</h1>
+
+                <div>
+                    <p>Oracion x </p>
+                </div>
+
                 <div className="card__oraciones__diarias_main">
             {sentences.map((sentence, index) => (
                 
