@@ -1,29 +1,31 @@
 nav{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
-    margin-top: 2rem;
+    background-color: antiquewhite;
+     padding: 2rem;
 }
 .logo{
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
 }
-.container-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+
+.btn_Orc_Personalizada{
+    width: 100px;
+    font-size: 1.2rem;
+    
 }
-.container-nav , li {
-    list-style: none;
-    padding: 0.5rem 1rem;
-}
-.container-nav , li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 1.3rem;
-    font-weight: 500;
+
+
+/* mediq query lasptop and tablet */
+@media (min-width: 768px) {
+    .logo{
+        font-size: 1.9rem;
+    }
+    nav{
+        flex-direction: row;
+    }
 }

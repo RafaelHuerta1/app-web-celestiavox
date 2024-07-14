@@ -73,7 +73,6 @@ function CardsMain(){
                 ))}
             </div>
             <img src="https://th.bing.com/th/id/OIG4.LGm_0CDGAAj2ibUmmzvY?pid=ImgGn" alt="descripción de la imagen" className="imgMain"/>
-
         </div>
     );
 }
