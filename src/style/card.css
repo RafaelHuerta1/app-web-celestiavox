@@ -21,6 +21,7 @@
     flex-direction: column;
     margin-top: 1rem;
 
+
 }
 .container__main__oracion__card{
     display: flex;
@@ -31,12 +32,11 @@
     color: #000000;
     padding: 1rem;
     border-radius: 10px;
-    width: 70%;
-    height: 'auto';
+    width: 300px;
+    height: 340px;
     margin-top: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    max-height: 500px;
+
 
 }
 .imgMain{
@@ -83,7 +83,11 @@ a{
         flex-direction:row ;
         gap: 1rem;
         justify-content: center;
-        margin-top: 12rem;
+        margin-top: 4rem;
+    }
+    .container__main__oracion__card{
+        width: 400px;
+        height: 400px;
     }
     .title__oraciones{
         margin-top: 4rem;

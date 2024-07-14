@@ -4,12 +4,21 @@
     text-decoration: underline;
 }
 .card__oraciones__diarias_main{
+    /*
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 4rem;
+    */
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+
+  
+    
 }
 .card__oraciones__diarias{
     display: flex;
@@ -19,7 +28,7 @@
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
     padding: 1.4rem;
-    width: 300px;
+    width: 200px; /*  in mobil 190px */
     height: 300px;
 
    border-radius: 2rem;
@@ -53,7 +62,12 @@
     
 }
 @media (min-width: 768px) {
-    .card__oraciones__diarias_main{
-        flex-grow: inherit;
+    .card__oraciones__diarias_main {
+        grid-template-columns: repeat(3, 0.1fr);
+
     }
+    .card__oraciones__diarias{
+        width: 350px;
+    }
+    
 }

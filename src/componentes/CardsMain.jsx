@@ -8,13 +8,13 @@ const cards = [
     {
         id: 1,
         title: "Oraciones Diairas",
-        description: "Oraciones para tu dia a dia, para que puedas tener un dia lleno de bendiciones"
+        description: "Comienza tu día con bendiciones: Oraciones Diarias"
         
     },
     {
     id: 2,
     title: "Oraciones a los SANTOS",
-    description: "Encuentra consuelo y fortaleza en la intercesión de los santos con estas oraciones cuidadosamente seleccionadas."
+    description: "Encuentra consuelo y fortaleza con las oraciones de los santos."
 },
 {
     id: 3,
@@ -24,6 +24,7 @@ const cards = [
     
 
 ];
+
 const {id, title, description, image} = cards;
 console.log(title, description, image);
 

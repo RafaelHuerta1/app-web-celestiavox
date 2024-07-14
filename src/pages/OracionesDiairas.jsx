@@ -28,6 +28,24 @@ const OracionesDiairas = () => {
             "descripcion": "Bendice a quienes están enfermos y dales sanidad. Amén.",
             "oracionLarga": "Bendice a quienes están enfermos y dales sanidad. Amén. Gracias por la oportunidad de vivir un nuevo día. Que sea un día de crecimiento y aprendizaje. Amén."
         },
+        {
+            id: 5,
+            title: "Oración por la paz",
+            descripcion: "Señor, danos tu paz que sobrepasa todo entendimiento. Amén.",
+            oracionLarga: "Señor, danos tu paz que sobrepasa todo entendimiento. Amén. Que tu amor y tu misericordia nos acompañen en todo momento. Amén."
+        },
+        {
+            id: 6,
+            title: "Oración por la familia",
+            descripcion: "Bendice a mi familia, Señor, y ayúdanos a crecer en amor y unidad. Amén.",
+            oracionLarga: "Bendice a mi familia, Señor, y ayúdanos a crecer en amor y unidad. Amén. Que tu amor y tu paz estén siempre con nosotros. Amén."
+        },
+        {
+            id: 7,
+            title: "Oración por la protección",
+            descripcion: "Señor, protégenos de todo mal y peligro. Amén.",
+            oracionLarga: "Señor, protégenos de todo mal y peligro. Amén. Que tu amor y tu misericordia nos acompañen en todo momento. Amén."
+        }
     
        
     ];
